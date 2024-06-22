@@ -18,7 +18,7 @@ connection.connect((err) => {
         console.error('error connecting:', err.stack);
     }
     else {
-        
+           console.log('Database Connected');
     }
 
 });
