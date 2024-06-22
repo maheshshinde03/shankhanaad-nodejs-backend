@@ -30,5 +30,5 @@ app.use('/users', usesrRouter);
 app.use('/admin', adminRouter);
 
 app.listen(PORT, () => {
-    
+    console.log(`Example app listening at http://localhost:${PORT}`);
 });
