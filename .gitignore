@@ -1,2 +1,4 @@
 # Node artifact files
 /node_modules
+
+db.config.js
