@@ -38,14 +38,14 @@ const sendEmail = (data, pdfPath) => {
             ]
         };
 
-        transporter.sendMail(mailOptions);
+        //transporter.sendMail(mailOptions);
 
-        // transporter.sendMail(mailOptions, (error, info) => {
-        //     if (error) {
-        //         return reject(error);
-        //     }
-        //     resolve(info);
-        // });
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return reject(error);
+            }
+            resolve(info);
+        });
     });
 };
 
