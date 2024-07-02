@@ -7,7 +7,15 @@ var path = require('path');
 require('dotenv').config();
 
 app.use(express.json());
-app.use(cors());
+
+const corsOptions = {
+    origin: 'https://www.shankhanaadtrust.com', // Your frontend domain
+    optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
+
+// app.use(cors());
 app.use(
     express.urlencoded({
         extended: true
